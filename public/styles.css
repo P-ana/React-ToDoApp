@@ -1,0 +1,140 @@
+/*IMPORTS*/
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Caveat&family=Comfortaa:wght@300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Julius+Sans+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*GLOBAL STYLES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right bottom,
+    #144aad,
+    #1843af,
+    #213cb0,
+    #2a33b0,
+    #3529af,
+    #3e24ae,
+    #471ead,
+    #4f16ac,
+    #5718ab,
+    #5e1baa,
+    #651da9,
+    #6b20a8
+  );
+  text-align: center;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 1.2rem;
+}
+
+.text {
+  color: #ff5845;
+}
+
+/*LAYOUT & STRUCTURE*/
+.container {
+  margin-top: 30px;
+  background-color: rgb(254, 254, 254);
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  max-width: 600px;
+  min-width: 250px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 59px 0px rgba(0, 0, 0, 0.42);
+  height: 600px;
+  overflow-y: auto;
+  padding: 30px;
+}
+
+/*HEADINGS*/
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+}
+
+/*INPUT FIELD*/
+
+.wrapper {
+  max-width: 450px;
+  margin: 50px auto;
+  border-radius: 40px;
+  background: transparent;
+  box-shadow: 0 4px 20px -2px #e9e9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.items {
+  margin: 10px 0 0 auto;
+}
+input {
+  width: 60%;
+  height: 20px;
+  padding: 15px 5px;
+  float: left;
+  border: none;
+  background: #fff;
+  border-radius: 40px;
+  border-top-style: none;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-radius: 40px;
+  border: none;
+}
+
+input::placeholder {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 1.2rem;
+}
+ul {
+  padding: 10px;
+  margin-left: 5px;
+  list-style: square;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.task {
+  padding: 10px;
+  text-align: left;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 1.2rem;
+  color: rgb(6, 6, 6);
+}
+
+/*BUTTONS*/
+
+#add {
+  overflow: visible;
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 30px;
+  width: 80px;
+  color: #fff;
+  text-transform: uppercase;
+  background: #ff5845;
+  border-radius: 40px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+#add:hover {
+  background-color: #ff2828;
+}
